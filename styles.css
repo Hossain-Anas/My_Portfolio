@@ -239,11 +239,13 @@ nav a.active {
     flex-direction: column;
     align-items: center;
     transition: box-shadow 0.2s;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+/*     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08); */
+    box-shadow: 0 2px 8px 0 hsla(0, 0%, 0%, 0.08);
 }
 
 .project-card-item:hover {
-    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.16);
+/*     box-shadow: 0 4px 24px 0 rgba(0,0,0,0.16); */
+    box-shadow: 0 4px 24px 0 hsla(0, 0%, 0%, 0.16);
 }
 
 .project-card-item img {
