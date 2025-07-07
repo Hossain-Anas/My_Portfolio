@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Anas Hossain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-main {
+            max-width: 1300px;
+            margin: 3.5rem auto 0 auto;
+            display: flex;
+            gap: 2.5rem;
+            background: none;
+        }
+        .contact-card {
+            background: hsl(0, 0%, 11%);
+            border-radius: 1.6rem;
+            padding: 2.5rem 3.2rem;
+            flex: 1 1 0;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-info {
+            gap: 2.2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+        .contact-info-icon {
+            color: hsl(14,82%,56%);
+            font-size: 1.5rem;
+            margin-top: 0.1rem;
+        }
+        .contact-info-label {
+            font-weight: 600;
+            font-size: 1.08rem;
+            margin-bottom: 0.1rem;
+        }
+        .contact-info-value {
+            color: hsl(0,0%,63%);
+            font-size: 1.01rem;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .contact-form-row {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .contact-form-group {
+            flex: 1 1 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            color: hsl(0,0%,63%);
+            font-size: 1.01rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            background: hsl(0,0%,17%);
+            color: hsl(0,0%,100%);
+            border: 1.5px solid hsl(0,0%,30%);
+            border-radius: 0.8rem;
+            padding: 1rem 1.2rem;
+            font-size: 1.08rem;
+            font-family: inherit;
+            margin-bottom: 0.2rem;
+            transition: border-color 0.2s;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: hsl(14,82%,56%);
+        }
+        .contact-form textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+        .contact-form button {
+            background: hsl(14,82%,56%);
+            color: hsl(0,0%,100%);
+            border: none;
+            border-radius: 1.2rem;
+            padding: 1rem 2.2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: hsl(12, 65%, 50%);
+        }
+        .contact-form button .form-btn-icon {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 900px) {
+            .contact-main {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+        @media (max-width: 600px) {
+          .contact-form-row {
+            flex-direction: column;
+            gap: 0.7rem;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#works">Works</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="margin-top: 2.5rem;">
+                <div style="text-align:center; color:hsl(0,0%,63%); font-size:1.05rem; margin-bottom:0.5rem;">contact</div>
+                <h1 style="text-align:center; font-size:2.5rem; font-weight:700; margin-bottom:2.5rem; color:hsl(0,0%,100%);">Get in Touch with Me!</h1>
+                <div class="contact-main">
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <span class="contact-info-icon">📞</span>
+                                <div>
+                                    <div class="contact-info-label">Contact Number:</div>
+                                    <div class="contact-info-value">+1234321321</div>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <span class="contact-info-icon">✉️</span>
+                                <div>
+                                    <div class="contact-info-label">Email Me:</div>
+                                    <div class="contact-info-value">anas.hossain365@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <form class="contact-form" action="https://formspree.io/f/xkgbayer" method="POST" autocomplete="off">
+                            <div class="contact-form-row">
+                                <div class="contact-form-group">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
+                                </div>
+                                <div class="contact-form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                                </div>
+                            </div>
+                            <div class="contact-form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" placeholder="Write Your message" required></textarea>
+                            </div>
+                            <button type="submit">
+                                Send Me Message <span class="form-btn-icon">✉️</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

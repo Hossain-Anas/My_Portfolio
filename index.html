@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Hossain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main-grid">
+                <div class="card profile-card">
+                    <div class="profile-image-container">
+                        <img src="img/pfp.jpg" alt="profile photo" />
+                    </div>
+                    <h2>Anas Hossain</h2>
+                    <p>Future AI Engineer</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Hossain-Anas" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+                        <a href="https://www.linkedin.com/in/hossain-anas/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">IN</a>
+                    </div>
+                </div>
+                <div class="card intro-card">
+                    <p class="intro-greeting">Hi There!</p>
+                    <h1 class="intro-main">I'm Anas Hossain, an aspiring AI engineer focused on crafting smart, ethical, and efficient AI solutions that solve real-world problems.</h1>
+                    <a href="https://discord.gg/Gf7yaXus" class="join-me-btn" target="_blank" rel="noopener noreferrer">Join Me</a>
+                </div>
+            </div>
+            <div class="card tech-stacks-card">
+                <h3>Technologies I am Familiar With</h3>
+                <div class="tech-names">
+                    <span class="tech-name supabase">Supabase</span>
+                    <span class="tech-name mysql">MySQL</span>
+                    <span class="tech-name huggingFace">Hugging Face</span>
+                    <span class="tech-name svelte">Svelte</span>
+                    <span class="tech-name langchain">LangChain</span>
+                </div>
+            </div>
+            <section id="works" class="card works-section">
+                <div class="works-header">
+                    <h2>Works & Projects</h2>
+                    <p>Check Out Some of My Academic Projects</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/383/383782.png" alt="Tic-Tac-Toe" />
+                        <div class="project-info">
+                            <h3 class="project-title">Tic-Tac-Toe</h3>
+                            <p class ="project-description">Tic-Tac-Toe game featuring both Player vs Player and Player vs AI modes.</p>
+                        </div>
+                    </div>
+                    <div class="project-card-item">
+                        <img src="img/lostnfound.jpg" alt="lost and found website" />
+                        <div class="project-info">
+                            <h3 class="project-title">Lost and Found Website</h3>
+                            <p class="project-description">A Lost and Found platform to help users report, track, and recover lost items easily</p>
+                        </div>
+                    </div>
+                    <div class="project-card-item">
+                        <img src="img/Machine-Learning.jpg" alt="machine-learning" />
+                        <div class="project-info">
+                            <h3 class="project-title">Multi-Class Classification Problem</h3>
+                            <p class="project-description">Solving Real-World Multi-Class Classification with ML</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <p><em><a href="https://www.reddit.com/r/Frieren/comments/199lctk/deep_moments_everyone_who_works_hard_is_a_warrior/" target="_blank" rel="noopener noreferrer" style="color: hsl(14,82%,56%); text-decoration: none; transition: text-decoration 0.2s;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">"Everyone Who Works Hard is a Warrior"</a></em></p>
+            <div id="page-info" style="text-align: right; font-size: 0.7rem; opacity: 0.7; color: hsl(0,0%,60%); margin-top: 1.2rem;"></div>
+            <script>
+              const infoDiv = document.getElementById('page-info');
+              infoDiv.textContent = `Page URL: ${window.location.href} | Last Modified: ${document.lastModified}`;
+            </script>
+        </footer>
+    </div>
+</body>
+</html>

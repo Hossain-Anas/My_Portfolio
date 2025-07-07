@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Anas Hossain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: hsl(0, 0%, 7%);
+            color: hsl(0, 0%, 100%);
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            background: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            color: hsl(0, 0%, 63%);
+            font-weight: 400;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 0.7rem;
+            letter-spacing: 0.01em;
+        }
+        nav a:hover,
+        nav a.active {
+            color: hsl(14, 82%, 56%);
+            background: hsl(0, 0%, 14%);
+            font-weight: 500;
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        @media (max-width: 900px) {
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        .about-card {
+            background: hsl(0, 0%, 11%);
+            border-radius: 2rem;
+            padding: 2.5rem 2rem;
+            min-width: 300px;
+        }
+        .about-card h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.5px;
+        }
+        .timeline {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid hsl(0, 0%, 14%);
+            padding-bottom: 2rem;
+        }
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .icon-box {
+            min-width: 48px;
+            min-height: 48px;
+            background: hsl(0, 0%, 100%);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-box span {
+            font-size: 1.3rem;
+            color: hsl(14, 82%, 56%);
+        }
+        .timeline-content {
+            flex: 1;
+        }
+        .timeline-date {
+            color: hsl(0, 0%, 63%);
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+            font-weight: 500;
+        }
+        .timeline-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: hsl(0, 0%, 100%);
+        }
+        .timeline-subtitle {
+            color: hsl(0, 0%, 80%);
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2.2rem 0 1.2rem 0;
+            color: hsl(14, 82%, 56%);
+            letter-spacing: 0.02em;
+        }
+        @media (max-width: 900px) {
+            .about-container {
+                flex-direction: column;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+            .about-card {
+                max-width: 100%;
+            }
+        }
+        .movie-link {
+            color: hsl(14,82%,56%);
+            text-decoration: none;
+            transition: text-decoration 0.2s;
+        }
+        .movie-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="index.html#works">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="about-container">
+            <div class="about-card">
+                <h2>ECA & Achievements</h2>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>✅</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-title">General Member</div>
+                            <div class="timeline-subtitle">BRACU DICHARI (mechanical)</div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>✅</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-title">Senior Contributor</div>
+                            <div class="timeline-subtitle">BRACU LASSETTE</div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>✅</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-title">First RoboCUP Qualification</div>
+                            <div class="timeline-subtitle">Part of the first RoboCUP qualification team</div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>✅</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-title">RS-Coding Competition</div>
+                            <div class="timeline-subtitle">Ranked 5th in the competition</div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>✅</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-title">BRACU INTRAHacktive</div>
+                            <div class="timeline-subtitle">Finalist (Debugger)</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>🎓</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 - Present</div>
+                            <div class="timeline-title">BSc in Computer Science</div>
+                            <div class="timeline-subtitle"><a href="https://www.bracu.ac.bd/" target="_blank" rel="noopener noreferrer" style="color: hsl(14,82%,56%); text-decoration: underline;">BRAC University</a></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>🏫</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021</div>
+                            <div class="timeline-title">Higher Secondary Certificate</div>
+                            <div class="timeline-subtitle"><a href="https://www.glabdhaka.edu.bd/" target="_blank" rel="noopener noreferrer" style="color: hsl(14,82%,56%); text-decoration: underline;">Government Laboratory High School</a></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>📘</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019</div>
+                            <div class="timeline-title">Secondary School Certificate</div>
+                            <div class="timeline-subtitle">Government Laboratory High School</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h2>Hobbies</h2>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>⚽</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Football</div>
+                            <div class="timeline-subtitle">Die Hard Real Madrid Fan</div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>🍥</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Anime</div>
+                            <div class="timeline-subtitle">Enjoys shonen, sports, and adventure genres</div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="icon-box"><span>🎬</span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Movies</div>
+                            <div class="timeline-subtitle">Loves thrillers, sci-fi, and classics</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h2 style="font-size: 1.1rem; margin-bottom: 1rem; text-align: center;">Favorite Movies</h2>
+                <table style="width:100%; border-collapse:separate; border-spacing:0; font-size:0.97rem; color: hsl(0,0%,92%); background: none; border: 1px solid hsl(0,0%,20%); border-radius: 1.2rem; margin: 1.5rem 0; overflow: hidden;">
+                    <tr style="background: hsl(14,82%,56%); color: hsl(0,0%,100%);">
+                        <th style='border: none; padding: 0.85rem 0.7rem 0.85rem 1.1rem; font-weight:700; border-top-left-radius: 1.2rem;'>Genre</th>
+                        <th style='border: none; padding: 0.85rem 0.7rem; font-weight:600;'>#</th>
+                        <th style='border: none; padding: 0.85rem 0.7rem; font-weight:600;'>Movie Title</th>
+                        <th style='border: none; padding: 0.85rem 1.1rem 0.85rem 0.7rem; font-weight:600; border-top-right-radius: 1.2rem;'>Your Thoughts</th>
+                    </tr>
+                    <tr style="background: hsl(0,0%,13%);">
+                        <td rowspan="2" style="border: none; background: hsl(14, 15%, 22%); font-weight:700; text-align:center; vertical-align:middle; padding: 0.8rem 0.7rem;">Sci-Fi</td>
+                        <td style='border: none; text-align:center; padding: 0.8rem 0.7rem; font-weight:500;'>1</td>
+                        <td style='border: none; font-weight:500; padding: 0.8rem 0.7rem;'><a class="movie-link" href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener noreferrer">Interstellar</a></td>
+                        <td style='border: none; font-weight:400; padding: 0.8rem 0.7rem;'>A mind-bending journey through space and time that explores love, sacrifice, and the survival of humanity.</td>
+                    </tr>
+                    <tr style="background: hsl(0,0%,10%);">
+                        <td style='border: none; text-align:center; padding: 0.8rem 0.7rem; font-weight:500;'>2</td>
+                        <td style='border: none; font-weight:500; padding: 0.8rem 0.7rem;'><a class="movie-link" href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer">Inception</a></td>
+                        <td style='border: none; font-weight:400; padding: 0.8rem 0.7rem;'>A thrilling dive into dreams within dreams.</td>
+                    </tr>
+                    <tr style="background: hsl(0,0%,13%);">
+                        <td style="border: none; background: hsl(14, 15%, 22%); font-weight:700; text-align:center; vertical-align:middle; padding: 0.8rem 0.7rem;">Animation</td>
+                        <td style='border: none; text-align:center; padding: 0.8rem 0.7rem; font-weight:500;'>3</td>
+                        <td style='border: none; font-weight:500; padding: 0.8rem 0.7rem;'><a class="movie-link" href="https://www.imdb.com/title/tt0245429/" target="_blank" rel="noopener noreferrer">Spirited Away</a></td>
+                        <td style='border: none; font-weight:400; padding: 0.8rem 0.7rem;'>A magical, emotional animated adventure.</td>
+                    </tr>
+                    <tr style="background: hsl(0,0%,10%);">
+                        <td style="border: none; background: hsl(14, 15%, 22%); font-weight:700; text-align:center; vertical-align:middle; padding: 0.8rem 0.7rem;">Crime</td>
+                        <td style='border: none; text-align:center; padding: 0.8rem 0.7rem; font-weight:500;'>4</td>
+                        <td style='border: none; font-weight:500; padding: 0.8rem 0.7rem;'><a class="movie-link" href="https://www.imdb.com/title/tt0110912/" target="_blank" rel="noopener noreferrer">Pulp Fiction</a></td>
+                        <td style='border: none; font-weight:400; padding: 0.8rem 0.7rem;'>A genre-bending, iconic film with unforgettable dialogue and style.</td>
+                    </tr>
+                    <tr style="background: hsl(0,0%,13%);">
+                        <td style="border: none; background: hsl(14, 15%, 22%); font-weight:700; text-align:center; vertical-align:middle; padding: 0.8rem 0.7rem;">Action</td>
+                        <td style='border: none; text-align:center; padding: 0.8rem 0.7rem; font-weight:500;'>5</td>
+                        <td style='border: none; font-weight:500; padding: 0.8rem 0.7rem;'><a class="movie-link" href="https://www.imdb.com/title/tt0468569/" target="_blank" rel="noopener noreferrer">The Dark Knight</a></td>
+                        <td style='border: none; font-weight:400; padding: 0.8rem 0.7rem;'>A masterpiece of superhero cinema.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
